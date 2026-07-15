@@ -8,9 +8,9 @@ from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from pydantic import BaseModel
 from langgraph.checkpoint.memory import  InMemorySaver
 
-# from dotenv import load_dotenv
-# load_dotenv()
-# print(os.getenv("OPENAI_API_BASE"))
+from dotenv import load_dotenv
+load_dotenv()
+print(os.getenv("OPENAI_API_BASE"))
 
 class CapitalInfo(BaseModel):
     name:str
